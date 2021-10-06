@@ -6,7 +6,8 @@
 		</title>
 		<script>
 			var link = window.location;
-			var splitedArr = link.split("?");
+			var re = /\s*?\s*/;
+			var splitedArr = link.split(re);
 			alert(splitedArr);
 			console.log(splitedArr);
 		</script>
