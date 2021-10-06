@@ -8,6 +8,20 @@
 			var link = window.location.search;
 			var newLink = "https://aff-apps.com/api/analytics" + link;
 			document.location.replace(newLink);
+			
+			/*var params = window
+				.location
+				.search
+				.replace('?','')
+				.split('&')
+				.reduce(
+					function(p,e){
+						var a = e.split('=');
+						p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+						return p;
+					},
+					{}
+				);*/
 		</script>
 	</head>
 	<body>
