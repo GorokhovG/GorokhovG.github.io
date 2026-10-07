@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join a Floe club</title>
+<meta name="description" content="A friend invited you to their cold-water club in Floe.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./">Floe</a>
+  <nav><a href="./">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+<main>
+<h1>Join a Floe club</h1>
+<p class="lead">A friend invited you to their cold-water club. In a club you see each other's minutes in the cold every week.</p>
+<div class="code-card">
+  <span class="meta">Invite code</span>
+  <div class="code" id="code">—</div>
+</div>
+<p><a class="button" id="open" href="floe://club">Open in Floe</a></p>
+<h2>Don't have Floe yet?</h2>
+<p>Install Floe on your iPhone, then come back to this page and tap “Open in Floe” — or open Floe, go to Challenges → Join a club and enter the code.</p>
+</main>
+<footer><p>© 2026 Floe · <a href="./">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p></footer>
+<script>
+  // ?code=K7Q2MX → the code, readable, and the link that opens the join sheet in the app.
+  const raw = (new URLSearchParams(location.search).get('code') || '').toUpperCase().replace(/[^A-HJ-NP-Z2-9]/g, '');
+  if (raw.length === 6) {
+    document.getElementById('code').textContent = raw.slice(0, 3) + ' ' + raw.slice(3);
+    document.getElementById('open').href = 'floe://club/' + raw;
+  }
+</script>
+</body>
+</html>

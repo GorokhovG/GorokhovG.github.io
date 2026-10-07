@@ -67,6 +67,16 @@ details p { color: var(--ink2); margin: 10px 0 0; }
 ul { padding-left: 20px; }
 li { margin: 6px 0; }
 footer { padding-top: 32px; padding-bottom: 40px; color: var(--ink2); font-size: 14px; }
+.code-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 18px 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+.code-card .meta { display: block; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+.code { font-size: 40px; font-weight: 700; letter-spacing: .08em; margin-top: 4px; }
 /* Apple Watch's web sheet (~200 px): the links go under the name. */
 @media (max-width: 340px) {
   .top, main { padding-left: 12px; padding-right: 12px; }
