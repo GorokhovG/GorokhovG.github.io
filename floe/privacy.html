@@ -15,7 +15,7 @@
 <main>
 <h1>Privacy Policy</h1>
 <p class="lead">Floe is a journal and timer for cold-water dips — open water, ice baths and cold showers — on iPhone and Apple Watch. It is made by Georgiy Gorokhov, the developer of Sea Temperature. This policy explains what data Floe uses, where it goes and the choices you have.</p>
-<p class="meta">Effective 7 October 2026</p>
+<p class="meta">Effective 9 October 2026</p>
 
 <h2>The short version</h2>
 <ul>
@@ -24,7 +24,7 @@
   <li>Apple Health data stays in Apple Health and on your devices. It is never sent to us or anyone else, and never used for advertising.</li>
   <li>To show water temperatures near you, Floe sends your location to the Sea Temperature service (and to Apple Weather for the forecast) when you look for nearby spots.</li>
   <li>The free version shows ads from Google AdMob. You decide about personalised ads and tracking in the consent and Apple tracking prompts.</li>
-  <li>We use Google Firebase to count how the app is used and to receive crash reports.</li>
+  <li>We use Google Firebase to count how the app is used, to receive crash reports and to send occasional push notifications.</li>
 </ul>
 
 <h2>Data stored on your devices</h2>
@@ -56,6 +56,8 @@
   <li><strong>Firebase Analytics</strong> — which screens and features are used (for example that a dip was saved or the paywall was opened), device model, OS version, app version and country. It does not include your journal contents, Health data or precise location.</li>
   <li><strong>Firebase Crashlytics</strong> — crash reports with technical details (device, OS, the code that failed) so bugs can be fixed.</li>
   <li><strong>Firebase Remote Config</strong> — downloads app settings so features can be adjusted without an update.</li>
+  <li><strong>Firebase Cloud Messaging</strong> — delivers push notifications (see Notifications below).</li>
+  <li><strong>Firebase App Check</strong> — confirms through Apple's App Attest that requests to clubs come from the genuine Floe app. It sends no personal data.</li>
 </ul>
 
 <h2>Clubs</h2>
@@ -72,12 +74,13 @@
 <p>Floe Premium is sold through Apple's App Store. Apple handles payment; we never see your payment details. The app checks with Apple whether your subscription or purchase is active, on iPhone and on Apple Watch. You can manage or cancel your subscription in Settings → your name → Subscriptions.</p>
 
 <h2>Notifications</h2>
-<p>Reminders (such as the best window to go in) and water alerts are scheduled on your device. Floe does not send your data to a push-notification service for these.</p>
+<p>Reminders (such as the best window to go in) and water alerts are scheduled on your device; no data leaves it for these.</p>
+<p>Floe can also receive occasional push notifications from us — season news, challenges and offers — through <a href="https://firebase.google.com/support/privacy">Firebase Cloud Messaging</a>. For this the app registers a push token for your device and joins two topics: all Floe users and your app language. To choose who gets a message, Firebase Analytics keeps a few settings with your app instance: whether you have Premium or a trial, whether notifications are allowed, whether you set a water alert and the app language. Notifications only appear if you allow them, and you can turn them off at any time in iOS Settings → Notifications → Floe.</p>
 
 <h2>Children</h2>
 <p>Floe is not directed to children under 13 and we do not knowingly collect personal data from children. Cold-water exposure carries real health risks; children should only dip with an adult.</p>
 
-<h2>Your choices and rights</h2>
+<h2 id="choices">Your choices and rights</h2>
 <ul>
   <li>Location, Health, notifications and tracking can be turned off at any time in iOS Settings.</li>
   <li>You can export or delete your journal in the app. Deleting the app removes the data stored by Floe on that device (Apple Health keeps the workouts it stored until you delete them there).</li>
