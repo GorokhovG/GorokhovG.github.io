@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Floe — Privacy Policy</title>
-<meta name="description" content="How Floe, the cold-water dip journal for iPhone and Apple Watch, handles your data.">
+<meta name="description" content="How Floe, the cold-water dip journal for iPhone, Apple Watch and Android, handles your data.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,41 +14,48 @@
 </header>
 <main>
 <h1>Privacy Policy</h1>
-<p class="lead">Floe is a journal and timer for cold-water dips — open water, ice baths and cold showers — on iPhone and Apple Watch. It is made by Georgiy Gorokhov, the developer of Sea Temperature. This policy explains what data Floe uses, where it goes and the choices you have.</p>
-<p class="meta">Effective 9 October 2026</p>
+<p class="lead">Floe is a journal and timer for cold-water dips — open water, ice baths and cold showers — on iPhone, Apple Watch and Android. It is made by Georgiy Gorokhov, the developer of Sea Temperature. This policy explains what data Floe uses, where it goes and the choices you have. It covers both versions; where they differ, the section says so.</p>
+<p class="meta">Effective 26 October 2026</p>
 
 <h2>The short version</h2>
 <ul>
   <li>Your dip journal is stored on your own devices. We don't receive your journal.</li>
-  <li>Clubs are optional. If you join or start one, you sign in with Apple, and the members of your clubs see your club name and this week's cold time, dips and streak. You can leave or delete your account in the app at any time.</li>
-  <li>Apple Health data stays in Apple Health and on your devices. It is never sent to us or anyone else, and never used for advertising.</li>
-  <li>To show water temperatures near you, Floe sends your location to the Sea Temperature service (and to Apple Weather for the forecast) when you look for nearby spots.</li>
-  <li>The free version shows ads from Google AdMob. You decide about personalised ads and tracking in the consent and Apple tracking prompts.</li>
+  <li>Clubs are optional. If you join or start one, you sign in with Apple (iPhone) or Google (Android), and the members of your clubs see your club name and this week's cold time, dips and streak. You can leave or delete your account in the app at any time, or ask us to delete it (see <a href="#delete-account">Deleting your data</a>).</li>
+  <li>Health data (Apple Health on iPhone, Health Connect on Android) stays on your devices. It is never sent to us or anyone else, and never used for advertising.</li>
+  <li>To show water temperatures near you, Floe sends your location to the Sea Temperature service when you look for nearby spots. The weather forecast for a spot comes from Apple Weather (iPhone) or Open-Meteo (Android).</li>
+  <li>The free version shows ads from Google AdMob. You decide about personalised ads in the consent prompt (and, on iPhone, Apple's tracking prompt).</li>
   <li>We use Google Firebase to count how the app is used, to receive crash reports and to send occasional push notifications.</li>
 </ul>
 
 <h2>Data stored on your devices</h2>
-<p><strong>Your journal</strong> — date, length, water temperature, place, how you felt, notes and sauna ↔ cold rounds of every dip — is saved in Floe's storage on your iPhone; your Apple Watch keeps a summary (recent dips, calendar, totals) and the dips it measured until the iPhone has them, so it works without the iPhone nearby. It is included in your device backup (iCloud or computer) like other app data. You can export it as a CSV file and delete single dips or everything in the app.</p>
+<p><strong>Your journal</strong> — date, length, water temperature, place, how you felt, notes and sauna ↔ cold rounds of every dip — is saved in Floe's storage on your phone. On iPhone your Apple Watch keeps a summary (recent dips, calendar, totals) and the dips it measured until the iPhone has them, so it works without the iPhone nearby. The journal is included in your device backup like other app data (iCloud or computer on iPhone; Android backup to your Google account on Android). You can export it as a CSV file and delete single dips or everything in the app.</p>
 <p><strong>Settings</strong> such as your cold level, units, favourite spots, alerts and reminders are stored on your device. Favourite spots and the spot you dip at are also used to fetch their water temperatures (see below).</p>
 
-<h2>Apple Health and Apple Watch</h2>
+<h2>Apple Health and Apple Watch (iPhone)</h2>
 <p>If you turn on Apple Health in Floe, the app asks your permission to write workouts (your dips, with water temperature) to Apple Health and to read your heart rate and workouts. On Apple Watch, Floe runs a workout session during a dip to measure your heart rate live; on Apple Watch Ultra it can also read the water temperature and depth from the watch's sensor.</p>
 <p>Health data is used only to show you your heart rate, recovery and dip history inside Floe. It is not sent to our servers or to any third party, it is not used for advertising or marketing, and it is not sold. You can change Floe's Health permissions at any time in the Health app or in Settings → Health → Data Access &amp; Devices.</p>
 <p>Your iPhone and Apple Watch exchange your dips, settings and Premium status directly with each other through Apple's WatchConnectivity.</p>
 
+<h2>Health Connect (Android)</h2>
+<p>If you turn on Health Connect in Floe, the app asks your permission to write your dips to Health Connect as exercise sessions (with water temperature) and to read your heart rate around a dip, so Floe can show your peak on entry, when your heart settled and how fast you recovered. Floe only reads and writes the data types you allow.</p>
+<p>Data from Health Connect is used only to show you this information inside Floe. It is not sent to our servers or to any third party, it is not used for advertising or marketing, it is not sold, and it is not used to determine credit-worthiness or for lending. Floe's use of Health Connect data follows the <a href="https://support.google.com/googleplay/android-developer/answer/12991134">Health Connect Permissions policy</a>, including its Limited Use requirements. You can change or remove Floe's permissions at any time in the Health Connect app or in Android Settings.</p>
+
 <h2>Location</h2>
-<p>With your permission, Floe uses your location to find water temperature points near you, sort spots by distance and show the weather and the best time to go in. For this the app sends your coordinates to:</p>
+<p>With your permission, Floe uses your location to find water temperature points near you, sort spots by distance and show the weather and the best time to go in. On Android Floe asks only for your approximate location, determined by Google Play services. For this the app sends coordinates to:</p>
 <ul>
   <li><strong>The Sea Temperature service</strong> (seatemp.link), run by the same developer, which answers with nearby water temperatures and forecasts;</li>
-  <li><strong>Apple Weather</strong> (WeatherKit), which answers with the weather forecast.</li>
+  <li><strong>Apple Weather</strong> (WeatherKit) on iPhone, or <strong><a href="https://open-meteo.com/en/terms">Open-Meteo</a></strong> on Android, which answers with the weather forecast for the spot you look at (the request contains the spot's coordinates).</li>
 </ul>
 <p>Floe does not track your location in the background and does not keep a location history. You can use Floe without location access by choosing spots on the map or by search.</p>
 
+<h2>Maps (Android)</h2>
+<p>The Spots map on Android shows map images from <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>. To draw the part of the map you look at, your device downloads map tiles from OpenStreetMap's tile servers, which receive your IP address and which tiles were requested. The tiles are kept in Floe's cache on your device. On iPhone the map comes from Apple Maps.</p>
+
 <h2>The Sea Temperature service</h2>
-<p>Water temperatures come from the Sea Temperature service. When Floe starts for the first time it receives a random identifier from the service; requests then include this identifier, the spot or coordinates you asked about, your device language, the platform and whether you have Premium. The identifier is not linked to your name, email or Apple ID. The service keeps standard server logs (such as IP address and time of request) for security and to keep the service running.</p>
+<p>Water temperatures and spot photos come from the Sea Temperature service. When Floe starts for the first time it receives a random identifier from the service; requests then include this identifier, the spot or coordinates you asked about, the app language, the platform (iOS or Android) and whether you have Premium. The identifier is not linked to your name, email, Apple ID or Google account. The service keeps standard server logs (such as IP address and time of request) for security and to keep the service running.</p>
 
 <h2>Advertising (free version)</h2>
-<p>The free version of Floe shows ads provided by <a href="https://policies.google.com/technologies/ads">Google AdMob</a>. Before any ads are loaded, users in the EEA, the UK and Switzerland are asked for consent through Google's consent form, and on iOS Apple asks whether Floe may track you across other companies' apps and websites. If you decline tracking, AdMob does not receive your device's advertising identifier and shows non-personalised ads. AdMob may collect device information, an advertising identifier (only with your permission), approximate location derived from your IP address and ad interaction data. Premium removes ads.</p>
+<p>The free version of Floe shows ads provided by <a href="https://policies.google.com/technologies/ads">Google AdMob</a>. Before any ads are loaded, users in the EEA, the UK and Switzerland are asked for consent through Google's consent form. On iOS Apple also asks whether Floe may track you across other companies' apps and websites; if you decline, AdMob does not receive your device's advertising identifier and shows non-personalised ads. On Android AdMob uses the device's advertising ID, which you can reset or delete in Android Settings → Privacy → Ads (or Google → Ads). AdMob may collect device information, an advertising identifier, approximate location derived from your IP address and ad interaction data, as described in Google's policy. Premium removes ads.</p>
 
 <h2>Analytics and crash reports</h2>
 <p>Floe uses <a href="https://firebase.google.com/support/privacy">Google Firebase</a>:</p>
@@ -57,33 +64,50 @@
   <li><strong>Firebase Crashlytics</strong> — crash reports with technical details (device, OS, the code that failed) so bugs can be fixed.</li>
   <li><strong>Firebase Remote Config</strong> — downloads app settings so features can be adjusted without an update.</li>
   <li><strong>Firebase Cloud Messaging</strong> — delivers push notifications (see Notifications below).</li>
-  <li><strong>Firebase App Check</strong> — confirms through Apple's App Attest that requests to clubs come from the genuine Floe app. It sends no personal data.</li>
+  <li><strong>Firebase App Check</strong> — confirms through Apple's App Attest (iPhone) or Google Play Integrity (Android) that requests to clubs come from the genuine Floe app. It sends no personal data.</li>
 </ul>
 
 <h2>Clubs</h2>
 <p>Clubs let friends compare their time in cold water each week. They are optional: you only use them if you join or start one.</p>
 <ul>
-  <li><strong>Sign in with Apple.</strong> To use clubs you sign in with Apple through Google Firebase Authentication. Floe asks Apple only for your name, never for your email address. Firebase keeps an account identifier linked to your Apple sign-in.</li>
+  <li><strong>Signing in.</strong> To use clubs you sign in through Google Firebase Authentication — with Apple on iPhone or with your Google account on Android. Firebase keeps an account identifier linked to that sign-in. Sign in with Apple gives Floe only your name, never your email address. With Google sign-in, Firebase also stores your Google account's email address with the account identifier; Floe does not show it to anyone or use it for anything else.</li>
   <li><strong>What is stored.</strong> Your name in clubs (you choose it), the clubs you are in, and for each club this week's total time in cold water, the number of dips and your current streak, with the time they were last updated. Clubs you start store their name, an invite code and that you run them. This data is stored in Google Cloud Firestore in the European Union.</li>
   <li><strong>Who sees it.</strong> Only the members of each club see its name, its members' names and their weekly numbers. Anyone with a club's invite code can see the club's name and join it, so share codes only with people you want in your club. The person who runs a club can remove members.</li>
   <li><strong>What is not shared.</strong> Your journal entries, notes, places, water temperatures, Health data and location are not sent to clubs — only the weekly totals above.</li>
-  <li><strong>Leaving and deleting.</strong> Leaving a club removes your numbers from its board. In Settings → Delete clubs account you can delete everything: you leave all clubs, clubs you run are deleted, your name and account are deleted, and Floe's access to your Apple Account is revoked. You can also stop Floe's access in your Apple Account settings (Sign in with Apple).</li>
+  <li><strong>Leaving and deleting.</strong> Leaving a club removes your numbers from its board. In Settings → Delete clubs account you can delete everything: you leave all clubs, clubs you run are deleted, and your name and account are deleted. On iPhone Floe's access to your Apple Account is revoked as well; you can also stop it in your Apple Account settings (Sign in with Apple). On Android you can also remove Floe from your Google account's third-party connections.</li>
 </ul>
 
 <h2>Purchases</h2>
-<p>Floe Premium is sold through Apple's App Store. Apple handles payment; we never see your payment details. The app checks with Apple whether your subscription or purchase is active, on iPhone and on Apple Watch. You can manage or cancel your subscription in Settings → your name → Subscriptions.</p>
+<p>Floe Premium is sold through Apple's App Store on iPhone and through Google Play on Android. The store handles payment; we never see your payment details. The app checks with the store whether your subscription or purchase is active (on iPhone also on Apple Watch); Google Play gives the app an order and purchase reference for this. You manage or cancel a subscription in iPhone Settings → your name → Subscriptions, or in the Google Play Store → your profile → Payments &amp; subscriptions → Subscriptions.</p>
 
 <h2>Notifications</h2>
-<p>Reminders (such as the best window to go in) and water alerts are scheduled on your device; no data leaves it for these.</p>
-<p>Floe can also receive occasional push notifications from us — season news, challenges and offers — through <a href="https://firebase.google.com/support/privacy">Firebase Cloud Messaging</a>. For this the app registers a push token for your device and joins two topics: all Floe users and your app language. To choose who gets a message, Firebase Analytics keeps a few settings with your app instance: whether you have Premium or a trial, whether notifications are allowed, whether you set a water alert and the app language. Notifications only appear if you allow them, and you can turn them off at any time in iOS Settings → Notifications → Floe.</p>
+<p>Reminders (such as the best window to go in), water alerts and, on Android, the dip timer shown in the notification shade and on the Lock Screen are created on your device; no data leaves it for these.</p>
+<p>Floe can also receive occasional push notifications from us — season news, challenges and offers — through <a href="https://firebase.google.com/support/privacy">Firebase Cloud Messaging</a>. For this the app registers a push token for your device and joins two topics: all Floe users and your app language. To choose who gets a message, Firebase Analytics keeps a few settings with your app instance: whether you have Premium or a trial, whether notifications are allowed, whether you set a water alert and the app language. Notifications only appear if you allow them, and you can turn them off at any time in iOS Settings → Notifications → Floe, or in Android Settings → Apps → Floe → Notifications.</p>
 
 <h2>Children</h2>
 <p>Floe is not directed to children under 13 and we do not knowingly collect personal data from children. Cold-water exposure carries real health risks; children should only dip with an adult.</p>
 
+<h2>How long data is kept</h2>
+<ul>
+  <li><strong>Journal, settings and favourites</strong> stay on your device until you delete them in the app or uninstall Floe (copies in your device backup follow your backup settings).</li>
+  <li><strong>Club data</strong> is kept while you are a member and deleted when you leave a club or delete your clubs account; weekly numbers are replaced every week.</li>
+  <li><strong>The Sea Temperature identifier</strong> stays on your device until you uninstall Floe; server logs are kept only as long as needed for security and operation.</li>
+  <li><strong>Firebase</strong> keeps Analytics data for at most 14 months and Crashlytics crash reports for 90 days; push tokens expire when the app is uninstalled or the token is no longer used.</li>
+  <li><strong>Google AdMob</strong> keeps advertising data as described in Google's policy.</li>
+</ul>
+<p>All connections Floe makes to these services are encrypted (HTTPS).</p>
+
+<h2 id="delete-account">Deleting your data</h2>
+<ul>
+  <li><strong>Clubs account:</strong> in Floe open Settings → Delete clubs account. This deletes your name, your club memberships and weekly numbers, clubs you run and your account. If you no longer have the app, email <a href="mailto:gorokhov.gw@gmail.com?subject=Floe%20account%20deletion">gorokhov.gw@gmail.com</a> with the subject "Floe account deletion" and the name you used in clubs; we delete the account and its club data within 30 days.</li>
+  <li><strong>Journal:</strong> delete dips one by one or all of them in the app; uninstalling Floe deletes the journal on that device.</li>
+  <li><strong>Sea Temperature identifier:</strong> uninstalling Floe removes it from your device; to have related server records removed, email us.</li>
+</ul>
+
 <h2 id="choices">Your choices and rights</h2>
 <ul>
-  <li>Location, Health, notifications and tracking can be turned off at any time in iOS Settings.</li>
-  <li>You can export or delete your journal in the app. Deleting the app removes the data stored by Floe on that device (Apple Health keeps the workouts it stored until you delete them there).</li>
+  <li>Location, Health, notifications and tracking can be turned off at any time in iOS Settings or Android Settings.</li>
+  <li>You can export or delete your journal in the app. Deleting the app removes the data stored by Floe on that device (Apple Health and Health Connect keep the workouts and sessions they stored until you delete them there).</li>
   <li>Depending on where you live (for example under the GDPR) you have the right to access, correct or delete personal data and to object to processing. Most of your data never reaches us: club data can be deleted in the app at any time, and for anything held by the Sea Temperature service (such as your random identifier) write to us and we will help.</li>
 </ul>
 
