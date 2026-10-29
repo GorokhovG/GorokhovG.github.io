@@ -22,8 +22,9 @@
 </div>
 <p><a class="button" id="open" href="floe://club">Open in Floe</a></p>
 <h2>Don't have Floe yet?</h2>
-<p>Install Floe on your iPhone, then come back to this page and tap “Open in Floe” — or open Floe, go to Challenges → Join a club and enter the code.</p>
-<p><a class="button" href="https://apps.apple.com/app/id6818178385">Get Floe on the App Store</a></p>
+<p>Install Floe on your iPhone or Android phone, then come back to this page and tap “Open in Floe” — or open Floe, go to Challenges → Join a club and enter the code.</p>
+<p id="app-store"><a class="button" href="https://apps.apple.com/app/id6818178385">Get Floe on the App Store</a></p>
+<p id="google-play"><a class="button" href="https://play.google.com/store/apps/details?id=com.gorokhovgv.floeeisbaden">Get Floe on Google Play</a></p>
 </main>
 <footer><p>© 2026 Floe · <a href="./">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p></footer>
 <script>
@@ -32,6 +33,11 @@
   if (raw.length === 6) {
     document.getElementById('code').textContent = raw.slice(0, 3) + ' ' + raw.slice(3);
     document.getElementById('open').href = 'floe://club/' + raw;
+  }
+  // On an Android phone, Google Play first.
+  if (/Android/i.test(navigator.userAgent)) {
+    const play = document.getElementById('google-play');
+    play.parentNode.insertBefore(play, document.getElementById('app-store'));
   }
 </script>
 </body>
