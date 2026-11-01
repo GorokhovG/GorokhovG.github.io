@@ -176,7 +176,7 @@ html,body{margin:0;background:#E9E7EC;font-family:Montserrat,system-ui,sans-seri
     <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 8px">
       <div style="display: flex; flex-direction: column; gap: 6px">
         <label for="email" style="font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #6E6E73">E-Mail</label>
-        <input id="email" type="email" value="georgiy@example.com" style="height: 52px; padding: 0 18px; border: 1.5px solid #E6E4EA; border-radius: 18px; background: #FFFFFF; font-size: 16px; font-weight: 600; box-sizing: border-box">
+        <input id="email" type="email" value="email@example.com" style="height: 52px; padding: 0 18px; border: 1.5px solid #E6E4EA; border-radius: 18px; background: #FFFFFF; font-size: 16px; font-weight: 600; box-sizing: border-box">
       </div>
       <div style="display: flex; flex-direction: column; gap: 6px">
         <label for="code" style="font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #6E6E73">Zugangscode</label>
@@ -1741,7 +1741,7 @@ html,body{margin:0;background:#E9E7EC;font-family:Montserrat,system-ui,sans-seri
   /* ---------- phone screens ---------- */
   function initLogin() {
     var r = R('Login');
-    on(findText(r, 'Code erneut senden', 'a'), function () { toast('Neuer Code an georgiy@example.com gesendet'); });
+    on(findText(r, 'Code erneut senden', 'a'), function () { toast('Neuer Code an email@example.com gesendet'); });
     on(findText(r, 'Jetzt bei STUWO buchen', 'a'), function () { toast('Öffnet reservation.stuwo.at (Demo)'); });
     var de = findText(r, 'Deutsch', 'span'), en = findText(r, 'English', 'span');
     if (de && en) {
