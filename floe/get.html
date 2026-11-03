@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Floe</title>
+<meta name="description" content="Floe — the cold-water dip timer and journal with real water temperatures for lakes, rivers and beaches.">
+<meta property="og:title" content="Floe">
+<meta property="og:description" content="The cold-water dip timer and journal with real water temperatures for lakes, rivers and beaches.">
+<meta name="apple-itunes-app" content="app-id=6818178385">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./">Floe</a>
+  <nav><a href="./">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+<main>
+<h1>Get Floe</h1>
+<p class="lead">Your cold-water companion: today's water at your spot, how long to stay in, a dip timer and a journal that shows how you adapt over the season.</p>
+<p id="app-store"><a class="button" href="https://apps.apple.com/app/id6818178385">Get Floe on the App Store</a></p>
+<p id="google-play" hidden><a class="button" href="https://play.google.com/store/apps/details?id=com.gorokhovgv.floeeisbaden">Get Floe on Google Play</a></p>
+<p id="android-soon" class="meta" hidden>Floe for Android is coming soon.</p>
+</main>
+<footer><p>© 2026 Floe · <a href="./">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p></footer>
+<script>
+  // Shares from the Floe app link here, and this page picks the store.
+  // Set PLAY_LIVE to true the day Floe is public on Google Play (its page is a 404 until then).
+  const PLAY_LIVE = false;
+  const appStore = 'https://apps.apple.com/app/id6818178385';
+  const googlePlay = 'https://play.google.com/store/apps/details?id=com.gorokhovgv.floeeisbaden';
+  const ua = navigator.userAgent;
+  // iPadOS reports a Mac user agent; a touch screen tells them apart.
+  const apple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  const android = /Android/i.test(ua);
+  if (PLAY_LIVE) {
+    const play = document.getElementById('google-play');
+    play.hidden = false;
+    // On an Android phone, Google Play first.
+    if (android) play.parentNode.insertBefore(play, document.getElementById('app-store'));
+  } else if (android) {
+    document.getElementById('android-soon').hidden = false;
+  }
+  if (apple) {
+    location.replace(appStore);
+  } else if (android && PLAY_LIVE) {
+    location.replace(googlePlay);
+  }
+</script>
+</body>
+</html>
